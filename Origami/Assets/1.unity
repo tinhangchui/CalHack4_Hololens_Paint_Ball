@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657695, g: 0.49641138, b: 0.5748176, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657755, g: 0.4964127, b: 0.57481825, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -678,6 +678,7 @@ MonoBehaviour:
   bullet: {fileID: 4290417626083478, guid: b7fb13438d10e984a916530c8429e1b4, type: 2}
   bulletStartPosition: {fileID: 968815565}
   bulletSpeed: 40
+  testObject: {fileID: 843885010}
 --- !u!1 &1015744781
 GameObject:
   m_ObjectHideFlags: 0

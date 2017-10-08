@@ -15,6 +15,9 @@ public class GazeGestureManager : MonoBehaviour
 
     GestureRecognizer recognizer;
 
+	public Transform testObject;
+	private Vector3 navigationStartPosition;
+
     // Use this for initialization
     void Awake()
     {
@@ -22,6 +25,22 @@ public class GazeGestureManager : MonoBehaviour
 
         // Set up a GestureRecognizer to detect Select gestures.
         recognizer = new GestureRecognizer();
+		recognizer.NavigationStartedEvent += (InteractionSourceKind source, Vector3 normalizedOffset, Ray headRay) => 
+		{
+			navigationStartPosition = testObject.position;
+		};
+		recognizer.NavigationUpdatedEvent += (InteractionSourceKind source, Vector3 normalizedOffset, Ray headRay) => 
+		{
+			testObject.position = navigationStartPosition + normalizedOffset * 10f;
+		};
+		recognizer.NavigationCompletedEvent += (InteractionSourceKind source, Vector3 normalizedOffset, Ray headRay) => 
+		{
+			testObject.position = navigationStartPosition;
+		};
+		recognizer.NavigationCanceledEvent += (InteractionSourceKind source, Vector3 normalizedOffset, Ray headRay) => 
+		{
+			testObject.position = navigationStartPosition;
+		};
         recognizer.TappedEvent += (source, tapCount, ray) =>
         {
             // Send an OnSelect message to the focused object and its ancestors.
