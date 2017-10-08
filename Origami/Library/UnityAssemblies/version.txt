@@ -1,4 +1,4 @@
-5.6.1f1:2.8.2.0
+5.6.1f1:3.0.0.1
 WSAPlayer
 C:/Program Files/Unity.5.6.1.f1/Editor/Data/PlaybackEngines/MetroSupport/Tools/UnityEngine.dll
 C:/Program Files/Unity.5.6.1.f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll

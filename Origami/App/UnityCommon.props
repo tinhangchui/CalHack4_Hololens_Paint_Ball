@@ -1,8 +1,8 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <UnityWSASolutionName>Origami</UnityWSASolutionName>
-        <UnityWSASolutionDir>C:\Users\Reactor\Documents\Origami\App\</UnityWSASolutionDir>
-        <UnityProjectDir>C:\Users\Reactor\Documents\Origami\</UnityProjectDir>
+        <UnityWSASolutionDir>C:\Users\Reactor Book\Desktop\CalHack4\CalHack4_Hololens_Pin_Ball\Origami\App\</UnityWSASolutionDir>
+        <UnityProjectDir>C:\Users\Reactor Book\Desktop\CalHack4\CalHack4_Hololens_Pin_Ball\Origami\</UnityProjectDir>
         <UnityWSAPlayerDir>C:\Program Files\Unity.5.6.1.f1\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
         <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
     </PropertyGroup>

@@ -8,7 +8,7 @@ namespace Es.InkPainter.Sample
 	public class Bullet : MonoBehaviour {
 
 		[SerializeField]
-		private Brush brush;
+		public Brush brush;
 
 		// Use this for initialization
 		void Start () {
